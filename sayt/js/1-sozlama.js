@@ -13,7 +13,7 @@ const SOZLAMA = {
   shahar: "",
   // Bot serveri manzili (Render), masalan: "https://mening-botim.onrender.com".
   // Bo'sh bo'lsa, ariza sayt turgan serverga ketadi.
-  server: "",
+  server: "https://dokon-bot-server.onrender.com",
 
   // Narxlar, so'mda. O'zingiz xohlaganingizcha o'zgartiring.
   narxlar: [
