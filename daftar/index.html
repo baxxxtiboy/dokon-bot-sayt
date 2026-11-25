@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mijozlar daftari</title>
+<link rel="stylesheet" href="../sayt/css/1-asos.css">
+<link rel="stylesheet" href="daftar.css">
+</head>
+<body>
+<main>
+<header><h1>Mijozlar daftari</h1><p id="hisob"></p></header>
+<p id="ogoh" class="ogoh" role="alert" hidden></p>
+<form id="yangi">
+  <label>Do'kon nomi<input name="nom" required maxlength="32"></label>
+  <label>Soha<select name="soha"></select></label>
+  <label>Aloqa (Instagram, Telegram, tel)<input name="aloqa" maxlength="120"></label>
+  <label>Aynan nimasi yoqdi<input name="gap" required maxlength="140" placeholder="masalan: ipak ro'mollaringiz"></label>
+  <button>Qo'shish</button>
+</form>
+<div class="asbob">
+  <label>Ko'rsatish<select id="filtr"></select></label>
+  <label class="manzil">Sayt manzili<input id="manzil" placeholder="https://..."></label>
+  <button id="saqla" type="button">Nusxa saqlash</button>
+  <label class="fayl">Nusxani ochish<input id="och" type="file" accept=".json"></label>
+</div>
+<ul id="royxat"></ul>
+<p id="bosh"></p>
+</main>
+<script src="../sayt/js/2-sohalar.js"></script>
+<script src="daftar.js"></script>
+</body>
+</html>

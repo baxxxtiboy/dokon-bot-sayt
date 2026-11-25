@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do'koningizga Telegram bot va sayt</title>
+<meta name="description" content="Do'konlar uchun Telegram bot va katalog sayt. Mijoz tanlaydi, buyurtma beradi, xabar sizga Telegramda keladi.">
+<meta property="og:title" content="Do'koningiz Telegramda qanday ko'rinadi?">
+<meta property="og:description" content="Nomini yozing va darhol ko'ring.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M5 11h22l-2 17H7z' fill='%230b4f4a'/%3E%3Cpath d='M11 13V9a5 5 0 0110 0v4' fill='none' stroke='%23b3173f' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/1-asos.css">
+<link rel="stylesheet" href="css/2-dokon.css">
+<link rel="stylesheet" href="css/3-sahifa.css">
+</head>
+<body>
+<header class="tepa">
+  <a href="#" class="belgi">Do'kon bot va sayt</a><span id="kim"></span>
+  <a class="tepa-tugma" href="#ariza-bolim">Ariza qoldirish</a>
+</header>
+<main>
+<section class="kirish">
+  <div>
+    <h1>Do'koningiz nomini yozing, tayyor holini ko'ring</h1>
+    <p class="yetakchi">Telegram bot va sayt qilaman. Mijoz o'zi tanlab buyurtma beradi, xabar sizga Telegramda keladi.</p>
+    <div class="sinov">
+      <label>Do'kon nomi<input id="nom" maxlength="32" autocomplete="organization"></label>
+      <label>Nima sotasiz<select id="soha"></select></label>
+    </div>
+    <p class="yonaltir">Endi mahsulotni + bilan savatga soling va buyurtma bering.</p>
+    <a id="toliq" href="namuna.html">To'liq ekranda ochish</a>
+  </div>
+  <div class="korgazma">
+    <div class="telefon"><div id="dokon" class="dokon"></div></div>
+    <div class="xabar-quti">
+      <span class="xabar-kim">Sizning Telegramingiz</span>
+      <div id="xabar" class="xabar" aria-live="polite"><p>Buyurtma berilsa, xabar shu yerga tushadi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="qator">
+  <h2>Qanday ishlaymiz</h2>
+  <ol class="qadamlar">
+    <li><h3>Bepul namuna</h3><p>3 ta mahsulotingiz bilan namuna qilaman. Yoqmasa, to'lamaysiz.</p></li>
+    <li><h3>Kelishuv</h3><p>Nima qilinishi, narx va muddatni yozib olamiz. Yarmi oldindan.</p></li>
+    <li><h3>Tayyor ish</h3><p>Ishga tushiraman, o'rgataman. Ikki marta tuzatish narx ichida.</p></li>
+  </ol>
+</section>
+
+<section class="qator"><h2>Narxlar</h2><ul id="narxlar" class="narxlar"></ul></section>
+<section class="qator" id="ishlar-bolim"><h2>Qilgan ishlarim</h2><ul id="ishlar" class="ishlar"></ul></section>
+
+<section class="ariza-bolim" id="ariza-bolim">
+  <div>
+    <h2>Bepul namuna so'rash</h2>
+    <p>Ism va telefon yetarli. Qolganini gaplashib olamiz.</p>
+    <div id="aloqa" class="aloqa"></div>
+  </div>
+  <form id="ariza">
+    <label>Ismingiz<input name="ism" required maxlength="60" autocomplete="name"></label>
+    <label>Telefon yoki Telegram<input name="aloqa" required maxlength="60" placeholder="+998 yoki @username"></label>
+    <label>Do'kon nomi<input name="dokon" maxlength="60"></label>
+    <label>Nima kerak<textarea name="izoh" rows="3" maxlength="600"></textarea></label>
+    <label class="tuzoq" aria-hidden="true">Sayt<input name="sayt" tabindex="-1" autocomplete="off"></label>
+    <button>Namuna so'rash</button>
+    <p id="holat" class="holat" role="status"></p>
+  </form>
+</section>
+</main>
+<script src="js/1-sozlama.js"></script>
+<script src="js/2-sohalar.js"></script>
+<script src="js/3-dokon.js"></script>
+<script src="js/4-ariza.js"></script>
+<script src="js/5-asosiy.js"></script>
+</body>
+</html>

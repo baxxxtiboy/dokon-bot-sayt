@@ -1,0 +1,20 @@
+main { max-width: 1060px; margin: auto; padding: 24px 20px 80px; }
+header { display: flex; gap: 10px 24px; align-items: baseline; flex-wrap: wrap; margin-bottom: 18px; }
+h1 { font-size: 30px; }
+label { font-size: 14px; font-weight: 600; display: block; }
+input, select { display: block; width: 100%; margin-top: 4px; padding: 10px; border: 2px solid #78908e; border-radius: 8px; background: #fff; font-weight: 400; }
+form { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; align-items: end; }
+button { min-height: 44px; padding: 9px 16px; border: 2px solid var(--feruza); border-radius: 8px; background: #fff; color: var(--feruza); font-weight: 700; }
+form button { background: var(--feruza); color: #fff; }
+.asbob { display: flex; gap: 12px; flex-wrap: wrap; align-items: end; margin: 26px 0 8px; padding-top: 18px; border-top: 1px solid var(--chiziq); }
+.manzil { flex: 1; min-width: 200px; }
+.fayl input { width: 210px; padding: 6px; font-size: 14px; }
+#royxat li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px 20px; padding: 16px 0; border-bottom: 1px solid var(--chiziq); }
+#bosh { padding: 22px 0; color: var(--xira); }
+.amal { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.amal select { width: auto; margin: 0; min-height: 44px; }
+.eslat, .ogoh { color: var(--qizil); font-weight: 700; }
+.ogoh { margin-bottom: 14px; }
+.xira { color: var(--xira); }
+.amal .ochir { border-color: transparent; background: none; color: var(--qizil); }
+@media (max-width: 760px) { #royxat li { grid-template-columns: minmax(0, 1fr); } }

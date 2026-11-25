@@ -1,0 +1,10 @@
+{
+  "name": "mijoz-topish",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node bot/index.js",
+    "test": "node --test testlar/hammasi.test.js"
+  }
+}

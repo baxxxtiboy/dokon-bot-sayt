@@ -1,0 +1,22 @@
+@font-face { font-family: Montserrat; src: url(../shriftlar/montserrat-latin-wght-normal.woff2) format("woff2"); font-weight: 100 900; font-display: swap; }
+:root {
+  --siyoh: #0e2a2b; --fon: #e9f1f0; --feruza: #0b4f4a; --anor: #b3173f;
+  --xira: #48605f; --chiziq: #bdd0ce; --qizil: #a3122f; --yashil: #14663a;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--fon); color: var(--siyoh); font: 17px/1.55 system-ui, "Segoe UI", sans-serif; overflow-wrap: break-word; }
+h1, h2, h3 { font-family: Montserrat, system-ui, sans-serif; line-height: 1.12; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+ul, ol { list-style: none; margin: 0; padding: 0; }
+a { color: var(--feruza); }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+:focus-visible { outline: 3px solid var(--anor); outline-offset: 2px; }
+.asosiy-tugma { display: inline-block; background: var(--feruza); color: #fff; padding: 13px 22px; border-radius: 8px; font-weight: 700; text-decoration: none; }
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+}

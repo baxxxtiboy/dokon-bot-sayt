@@ -1,0 +1,10 @@
+.ogoh { background: #ffe08a; color: #3a2a00; text-align: center; padding: 9px 16px; font-size: 15px; font-weight: 600; }
+.namuna main { max-width: 1100px; margin: 0 auto; padding: 20px; display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 26px; align-items: start; }
+.namuna .dokon { height: auto; border-radius: 12px; overflow: clip; }
+.namuna aside { position: sticky; top: 20px; }
+.namuna h2 { font-size: 20px; margin-bottom: 12px; }
+.namuna aside > p { margin: 22px 0 10px; }
+@media (max-width: 760px) {
+  .namuna main { grid-template-columns: minmax(0, 1fr); }
+  .namuna aside { position: static; }
+}

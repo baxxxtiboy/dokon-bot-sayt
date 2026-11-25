@@ -1,0 +1,28 @@
+/* Mini-do'kon va Telegram xabari */
+.dokon { --dokon: #b3173f; background: #fff; display: flex; flex-direction: column; height: 100%; }
+.dokon-bosh { background: var(--dokon); color: #fff; padding: 16px; display: flex; flex-direction: column; transition: background .25s; }
+.dokon-nom { font: 800 19px/1.2 Montserrat, sans-serif; }
+.dokon-soha { font-size: 13px; }
+.dokon-tovar { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #dde6e5; flex: 1; }
+.tovar { background: #fff; padding: 12px; display: flex; flex-direction: column; min-width: 0; }
+.tovar svg { width: 62px; height: 62px; margin: 2px auto 8px; fill: var(--dokon); }
+.tovar .chiziq { fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; }
+.tovar .rangli { stroke: var(--dokon); stroke-width: 7; }
+.tovar-nom { font-size: 14px; line-height: 1.25; font-weight: 600; }
+.tovar-narx { font-size: 13px; color: var(--xira); }
+.tovar-tugma { display: flex; align-items: center; gap: 8px; margin-top: auto; padding-top: 8px; justify-content: flex-end; }
+.tovar-tugma button { width: 40px; height: 40px; padding: 0; border: 1px solid var(--dokon); border-radius: 8px; background: #fff; color: var(--dokon); font-size: 20px; line-height: 1; }
+.tovar-tugma .kop { background: var(--dokon); color: #fff; }
+.soni { min-width: 1ch; font-variant-numeric: tabular-nums; }
+.dokon-past { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px; border-top: 1px solid #dde6e5; }
+.dokon-jami { font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.dokon-tugma { border: 0; border-radius: 8px; background: var(--dokon); color: #fff; font-size: 14px; font-weight: 700; padding: 12px 14px; }
+.dokon-tugma:disabled { background: #dfe6e5; color: #566867; }
+.xabar { background: #fff; border-radius: 4px 14px 14px 14px; padding: 12px 14px; font-size: 14.5px; line-height: 1.5; }
+.xabar-bosh, .xabar-jami { font-weight: 700; }
+.keldi { animation: keldi .35s ease-out; }
+@keyframes keldi { from { transform: translateY(12px); opacity: 0; } }
+.keng .dokon-tovar { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+.keng .tovar svg { width: 96px; height: 96px; }
+.keng .dokon-past { position: sticky; bottom: 0; background: #fff; }
+.keng .dokon-nom { font-size: 28px; }
